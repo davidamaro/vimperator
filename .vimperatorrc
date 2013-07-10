@@ -1,0 +1,20 @@
+:source ~/.vimperator/plugin_libly.js
+:source ~/.vimperator/plugin_smooziee.js
+:source ~/.vimperator/plugin_PDF.js.js
+nnoremap F ;t
+nnoremap l <C-n>
+nnoremap h <c-p>
+"nnoremap j 3j
+"nnoremap k 3k
+nnoremap <C-h> :tabmove! -1<CR>
+nnoremap <C-l> :tabmove! +1<CR>
+inoremap jk <esc>
+:command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
+:lazy fmaps -u='mail\.google\.com/mail' c / j k n p o u e x s r a # [ ] ? gi gs gt gd ga gc
+:lazy fmaps -u='cloud\.feedly\.com' m / r gm ga gg gl o v n p
+" Qmarks "
+silent qmark f https://facebook.com
+silent qmark R http://cloud.feedly.com
+silent qmark g https://gmail.com
+silent qmark w https://wolframalpha.com
+silent qmark r http://reddit.com
